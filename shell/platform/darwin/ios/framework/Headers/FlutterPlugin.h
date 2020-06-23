@@ -8,11 +8,11 @@
 #import <UIKit/UIKit.h>
 #import <UserNotifications/UNUserNotificationCenter.h>
 
-#include "FlutterBinaryMessenger.h"
-#include "FlutterChannels.h"
-#include "FlutterCodecs.h"
-#include "FlutterPlatformViews.h"
-#include "FlutterTexture.h"
+#import <Flutter/FlutterBinaryMessenger.h>
+#import <Flutter/FlutterChannels.h>
+#import <Flutter/FlutterCodecs.h>
+#import <Flutter/FlutterPlatformViews.h>
+#import <Flutter/FlutterTexture.h>
 
 NS_ASSUME_NONNULL_BEGIN
 @protocol FlutterPluginRegistrar;

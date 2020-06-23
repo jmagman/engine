@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 // FLUTTER_NOLINT
 
-#include "flutter/shell/platform/darwin/common/framework/Headers/FlutterCodecs.h"
+#include "FlutterCodecs.h"
 #include "gtest/gtest.h"
 
 void checkEncodeDecode(id value, NSData* expectedEncoding) {

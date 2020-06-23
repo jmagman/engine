@@ -5,9 +5,5 @@
 framework_shared_headers =
     get_path_info([
                     "framework/Headers/FlutterMacros.h",
-                    "framework/Headers/FlutterBinaryMessenger.h",
-                    "framework/Headers/FlutterChannels.h",
-                    "framework/Headers/FlutterCodecs.h",
-                    "framework/Headers/FlutterTexture.h",
                   ],
                   "abspath")

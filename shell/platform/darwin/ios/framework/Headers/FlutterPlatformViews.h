@@ -7,8 +7,8 @@
 
 #import <UIKit/UIKit.h>
 
-#import "FlutterCodecs.h"
-#import "FlutterMacros.h"
+#import <Flutter/FlutterCodecs.h>
+#import <Flutter/FlutterMacros.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

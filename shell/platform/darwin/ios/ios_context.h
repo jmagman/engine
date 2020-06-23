@@ -11,7 +11,7 @@
 #include "flutter/flow/texture.h"
 #include "flutter/fml/macros.h"
 #include "flutter/fml/platform/darwin/scoped_nsobject.h"
-#include "flutter/shell/platform/darwin/common/framework/Headers/FlutterTexture.h"
+#include "flutter/shell/platform/darwin/ios/framework/Headers/FlutterTexture.h"
 #include "flutter/shell/platform/darwin/ios/rendering_api_selection.h"
 #include "third_party/skia/include/gpu/GrDirectContext.h"
 

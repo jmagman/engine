@@ -4,12 +4,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import "FlutterPluginMacOS.h"
+#import <FlutterMacOS/FlutterPluginMacOS.h>
 
-#import "FlutterBinaryMessenger.h"
-#import "FlutterChannels.h"
-#import "FlutterMacros.h"
-#import "FlutterTexture.h"
+#import <FlutterMacOS/FlutterBinaryMessenger.h>
+#import <FlutterMacOS/FlutterChannels.h>
+#import <FlutterMacOS/FlutterMacros.h>
+#import <FlutterMacOS/FlutterTexture.h>
 
 // TODO: Merge this file and FlutterPluginMacOS.h with the iOS FlutterPlugin.h, sharing all but
 // the platform-specific methods.

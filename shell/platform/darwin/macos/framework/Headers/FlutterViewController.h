@@ -4,9 +4,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import "FlutterEngine.h"
-#import "FlutterMacros.h"
-#import "FlutterPluginRegistrarMacOS.h"
+#import <FlutterMacOS/FlutterEngine.h>
+#import <FlutterMacOS/FlutterMacros.h>
+#import <FlutterMacOS/FlutterPluginRegistrarMacOS.h>
 
 /**
  * Values for the `mouseTrackingMode` property.

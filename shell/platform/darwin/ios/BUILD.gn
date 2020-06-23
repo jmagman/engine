@@ -25,13 +25,17 @@ shell_gpu_configuration("ios_gpu_configuration") {
 _flutter_framework_headers = [
   "framework/Headers/Flutter.h",
   "framework/Headers/FlutterAppDelegate.h",
+  "framework/Headers/FlutterBinaryMessenger.h",
   "framework/Headers/FlutterCallbackCache.h",
+  "framework/Headers/FlutterChannels.h",
+  "framework/Headers/FlutterCodecs.h",
   "framework/Headers/FlutterDartProject.h",
   "framework/Headers/FlutterEngine.h",
   "framework/Headers/FlutterHeadlessDartRunner.h",
   "framework/Headers/FlutterPlatformViews.h",
   "framework/Headers/FlutterPlugin.h",
   "framework/Headers/FlutterPluginAppLifeCycleDelegate.h",
+  "framework/Headers/FlutterTexture.h",
   "framework/Headers/FlutterViewController.h",
 ]
 
@@ -305,9 +309,13 @@ copy("copy_license") {
   outputs = [ "$root_out_dir/LICENSE" ]
 }
 
-shared_library("copy_and_verify_framework_headers") {
+shared_library("copy_and_verify_framework_module") {
   visibility = [ ":*" ]
-  include_dirs = [ "$_flutter_framework_headers_copy_dir" ]
+  cflags_objc = [
+    "-F$framework_search_path",
+    "-fmodules",
+    "-Wquoted-include-in-framework-header",
+  ]
 
   sources = [ "framework/Source/FlutterUmbrellaImport.m" ]
   deps = [ ":copy_framework_headers" ]
@@ -315,11 +323,11 @@ shared_library("copy_and_verify_framework_headers") {
 
 group("flutter_framework") {
   deps = [
-    ":copy_and_verify_framework_headers",
+    ":copy_framework_module_map",
+    ":copy_and_verify_framework_module",
+    ":copy_framework_info_plist",
     ":copy_dylib",
     ":copy_framework_icu",
-    ":copy_framework_info_plist",
-    ":copy_framework_module_map",
     ":copy_framework_podspec",
     ":copy_license",
   ]

@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-#include "FlutterMacros.h"
+#import <Flutter/FlutterMacros.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

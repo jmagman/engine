@@ -17,7 +17,7 @@
 #include "flutter/flow/rtree.h"
 #include "flutter/fml/platform/darwin/scoped_nsobject.h"
 #include "flutter/shell/common/persistent_cache.h"
-#include "flutter/shell/platform/darwin/common/framework/Headers/FlutterChannels.h"
+#include "flutter/shell/platform/darwin/ios/framework/Headers/FlutterChannels.h"
 
 namespace flutter {
 

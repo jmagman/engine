@@ -53,9 +53,13 @@ if (flutter_runtime_mode == "debug") {
 }
 
 if (is_ios || is_mac) {
+  framework_search_path = rebase_path("$root_out_dir")
   flutter_cflags_objc = [
     "-Werror=overriding-method-mismatch",
     "-Werror=undeclared-selector",
+    "-F$framework_search_path",
+    "-I$framework_search_path/Flutter.framework/Headers",
+    "-I$framework_search_path/FlutterMacOS.framework/Headers",
   ]
   flutter_cflags_objcc = flutter_cflags_objc
 }
