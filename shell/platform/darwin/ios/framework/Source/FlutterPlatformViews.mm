@@ -45,7 +45,12 @@ static bool ClipRectContainsPlatformViewBoundingRect(const SkRect& clip_rect,
                                                      const SkRect& platformview_boundingrect,
                                                      const SkMatrix& transform_matrix) {
   SkRect transformed_rect = transform_matrix.mapRect(clip_rect);
-  return transformed_rect.contains(platformview_boundingrect);
+
+  // Float imprecision has accumulated, round to integers to check boundaries.
+  SkIRect transformed_rect_rounded = transformed_rect.round();
+  SkIRect platformview_boundingrect_rounded = platformview_boundingrect.round();
+
+  return transformed_rect_rounded.contains(platformview_boundingrect_rounded);
 }
 
 // Determines if the `clipRRect` from a clipRRect mutator contains the
