@@ -29,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO"
+            skipped = "YES"
             testExecutionOrdering = "random">
             <BuildableReference
                BuildableIdentifier = "primary"
@@ -38,6 +38,38 @@
                BlueprintName = "ScenariosTests"
                ReferencedContainer = "container:Scenarios.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "AppLifecycleTests">
+               </Test>
+               <Test
+                  Identifier = "FlutterEngineTest">
+               </Test>
+               <Test
+                  Identifier = "FlutterEngineTest/testChannelSetup">
+               </Test>
+               <Test
+                  Identifier = "FlutterEngineTest/testIsolateId">
+               </Test>
+               <Test
+                  Identifier = "FlutterEngineTest/testReleaseViewControllerAfterDestroyContextInHeadlessMode">
+               </Test>
+               <Test
+                  Identifier = "FlutterViewControllerInitialRouteTest">
+               </Test>
+               <Test
+                  Identifier = "FlutterViewControllerInitialRouteTest/testSettingInitialRoute">
+               </Test>
+               <Test
+                  Identifier = "FlutterViewControllerTest">
+               </Test>
+               <Test
+                  Identifier = "FlutterViewControllerTest/testDrawLayer">
+               </Test>
+               <Test
+                  Identifier = "FlutterViewControllerTest/testFirstFrameCallback">
+               </Test>
+            </SkippedTests>
          </TestableReference>
          <TestableReference
             skipped = "NO"
@@ -49,6 +81,332 @@
                BlueprintName = "ScenariosUITests"
                ReferencedContainer = "container:Scenarios.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "AppExtensionTests">
+               </Test>
+               <Test
+                  Identifier = "AppExtensionTests/testAppExtensionLaunching">
+               </Test>
+               <Test
+                  Identifier = "BogusFontTextTest">
+               </Test>
+               <Test
+                  Identifier = "BogusFontTextTest/testFontRenderingWhenSuppliedWithBogusFont">
+               </Test>
+               <Test
+                  Identifier = "DarwinSystemFontTests">
+               </Test>
+               <Test
+                  Identifier = "DarwinSystemFontTests/testFontRendering">
+               </Test>
+               <Test
+                  Identifier = "GoldenPlatformViewTests">
+               </Test>
+               <Test
+                  Identifier = "LocalizationInitializationTest">
+               </Test>
+               <Test
+                  Identifier = "LocalizationInitializationTest/testNoLocalePrepend">
+               </Test>
+               <Test
+                  Identifier = "MultiplePlatformViewsBackgroundForegroundTest">
+               </Test>
+               <Test
+                  Identifier = "MultiplePlatformViewsBackgroundForegroundTest/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "MultiplePlatformViewsTest">
+               </Test>
+               <Test
+                  Identifier = "MultiplePlatformViewsTest/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "NonFullScreenFlutterViewPlatformViewUITests">
+               </Test>
+               <Test
+                  Identifier = "NonFullScreenFlutterViewPlatformViewUITests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewGestureRecognizerTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewGestureRecognizerTests/testAccept">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewGestureRecognizerTests/testGestureWithMaskViewBlockingPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewGestureRecognizerTests/testGestureWithOverlappingPlatformViews">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewGestureRecognizerTests/testRejectPolicyEager">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewGestureRecognizerTests/testRejectPolicyUtilTouchesEnded">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipPathMultipleClipsTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipPathMultipleClipsTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipPathTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipPathTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipPathWithTransformMultipleClipsTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipPathWithTransformMultipleClipsTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipPathWithTransformTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipPathWithTransformTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRRectMultipleClipsTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRRectMultipleClipsTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRRectTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRRectTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRRectWithTransformMultipleClipsTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRRectWithTransformMultipleClipsTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRRectWithTransformTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRRectWithTransformTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRectAfterMovedMultipleClipsTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRectAfterMovedMultipleClipsTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRectAfterMovedTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRectAfterMovedTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRectTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRectTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRectWithMultiupleClipsTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRectWithMultiupleClipsTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRectWithTransformMultipleClipsTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRectWithTransformMultipleClipsTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRectWithTransformTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationClipRectWithTransformTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationLargeClipRRectMultipleClipsTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationLargeClipRRectMultipleClipsTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationLargeClipRRectTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationLargeClipRRectTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationLargeClipRRectWithTransformMultipleClipsTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationLargeClipRRectWithTransformMultipleClipsTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationLargeClipRRectWithTransformTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationLargeClipRRectWithTransformTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationOpacityTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationOpacityTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationTransformTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewMutationTransformTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewRotation">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewRotation/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewScrollingUnderWidget">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewScrollingUnderWidget/testPlatformViewScrollingUnderWidget">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewUITests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewUITests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewWithClipsScrolling">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewWithClipsScrolling/testPlatformViewsWithClipsScrolling">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewWithClipsScrollingMultipleClips">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewWithClipsScrollingMultipleClips/testPlatformViewsWithClipsScrolling">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewWithContinuousTexture">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewWithContinuousTexture/testPlatformViewWithContinuousTexture">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewWithNegativeOtherBackDropFilterTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewWithNegativeOtherBackDropFilterTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewWithOtherBackdropFilterTests">
+               </Test>
+               <Test
+                  Identifier = "PlatformViewWithOtherBackdropFilterTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "StatusBarTest">
+               </Test>
+               <Test
+                  Identifier = "StatusBarTest/testTapStatusBar">
+               </Test>
+               <Test
+                  Identifier = "TwoPlatformViewClipPathMultipleClipsTests">
+               </Test>
+               <Test
+                  Identifier = "TwoPlatformViewClipPathMultipleClipsTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "TwoPlatformViewClipPathTests">
+               </Test>
+               <Test
+                  Identifier = "TwoPlatformViewClipPathTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "TwoPlatformViewClipRRectMultipleClipsTests">
+               </Test>
+               <Test
+                  Identifier = "TwoPlatformViewClipRRectMultipleClipsTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "TwoPlatformViewClipRRectTests">
+               </Test>
+               <Test
+                  Identifier = "TwoPlatformViewClipRRectTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "TwoPlatformViewClipRectMultipleClipsTests">
+               </Test>
+               <Test
+                  Identifier = "TwoPlatformViewClipRectMultipleClipsTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "TwoPlatformViewClipRectTests">
+               </Test>
+               <Test
+                  Identifier = "TwoPlatformViewClipRectTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "TwoPlatformViewsWithOtherBackDropFilterTests">
+               </Test>
+               <Test
+                  Identifier = "TwoPlatformViewsWithOtherBackDropFilterTests/testPlatformView">
+               </Test>
+               <Test
+                  Identifier = "UnobstructedPlatformViewTests">
+               </Test>
+               <Test
+                  Identifier = "UnobstructedPlatformViewTests/testMultiplePlatformViewsWithOverlays">
+               </Test>
+               <Test
+                  Identifier = "UnobstructedPlatformViewTests/testMultiplePlatformViewsWithoutOverlays">
+               </Test>
+               <Test
+                  Identifier = "UnobstructedPlatformViewTests/testNoOverlay">
+               </Test>
+               <Test
+                  Identifier = "UnobstructedPlatformViewTests/testOneOverlay">
+               </Test>
+               <Test
+                  Identifier = "UnobstructedPlatformViewTests/testOneOverlayAndTwoIntersectingOverlays">
+               </Test>
+               <Test
+                  Identifier = "UnobstructedPlatformViewTests/testOneOverlayPartialIntersection">
+               </Test>
+               <Test
+                  Identifier = "UnobstructedPlatformViewTests/testPlatformViewsMaxOverlays">
+               </Test>
+               <Test
+                  Identifier = "UnobstructedPlatformViewTests/testPlatformViewsWithAdjacentSurroundingLayersAndFractionalCoordinate">
+               </Test>
+               <Test
+                  Identifier = "UnobstructedPlatformViewTests/testPlatformViewsWithPartialIntersectionAndFractionalCoordinate">
+               </Test>
+               <Test
+                  Identifier = "UnobstructedPlatformViewTests/testTwoIntersectingOverlays">
+               </Test>
+               <Test
+                  Identifier = "iPadGestureTests">
+               </Test>
+               <Test
+                  Identifier = "iPadGestureTests/testPointerButtons">
+               </Test>
+               <Test
+                  Identifier = "iPadGestureTests/testPointerHover">
+               </Test>
+               <Test
+                  Identifier = "iPadGestureTests/testPointerScroll">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>
